@@ -17,7 +17,7 @@ spec:
       containers:
         - name: vprodb
           image: leonguyen08/vprofiledb:latest
-            volumeMounts:
+          volumeMounts:
             - mountPath: /var/lib/mysql
               name: vpro-db-data
           ports:
@@ -30,7 +30,7 @@ spec:
                   name: app-secret
                   key: db-pass
     nodeSelector:
-      zone: us-east-1a
+        zone: us-east-1a
     volumes:
       - name: vpro-db-data
         awsElasticBlockStore:
