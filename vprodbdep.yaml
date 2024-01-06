@@ -43,5 +43,7 @@ spec:
         volumeMounts:
           - name: vpro-db-data
             mountPath: /var/lib/mysql
+
+####
               
 
